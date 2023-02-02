@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from './container/Header'
+import Listing from './container/Listing'
 
 const App = () => {
   return (
     <div>
-        hey
+
+      <Header/>
+      <Listing/>
+     
     </div>
   )
 }
