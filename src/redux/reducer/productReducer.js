@@ -3,12 +3,7 @@ import { actionTypes } from "../constant/actionTypes";
 
 
 const initialState = {
-    products : [
-        {
-            id:1,
-            category: "new"
-        }
-    ]
+    products : []
 }
 
 export const productReducer = (state = initialState,{type,payload}) =>{
@@ -16,7 +11,7 @@ export const productReducer = (state = initialState,{type,payload}) =>{
     switch ({type}) {
         case actionTypes.SET_PRODUCTS:
             
-            return state;
+            return {...state, products:payload};
     
         default:
             return state;
